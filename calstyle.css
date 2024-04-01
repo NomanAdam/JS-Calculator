@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; 
+}
+
+#res-display{
+    border: 1px solid ;
+    width: 200px;
+    background-color:
+    #0c2635;
+    text-align: center;
+   
+
+
+}
+#display{
+    width: 192px;
+    height: 40px;
+    background-color: aliceblue;
+}
+.button{
+    background-color: #0c2635;
+    color: white;
+}
+#edit{ 
+ height: 40px;
+ width: 40px;
+ 
+}
+
+

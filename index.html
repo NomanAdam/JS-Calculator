@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calstyle.css">
+</head>
+<body>
+    <div id="res-display" >
+        <input type="text" id="display" readonly>
+       
+       <div id=" but-container">
+        <button class="button" style="width: 85px;height: 40px;      background-color:#ff2d7a ;"onclick="displaycontent= '';
+        document.getElementById('display').value=displaycontent; ">c</button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'/';document.getElementById('display').value=displaycontent; " >/</button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'*';document.getElementById('display').value=displaycontent; " >* </button>
+        <button class="button" style="width: 40px; height: 40px;" onclick="displaycontent= displaycontent+'7';document.getElementById('display').value=displaycontent; ">7 </button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'8';document.getElementById('display').value=displaycontent; " >8 </button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'9';document.getElementById('display').value=displaycontent; " >9 </button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'-';document.getElementById('display').value=displaycontent;  " >-</button>
+        <button class="button" style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'4';document.getElementById('display').value=displaycontent; ">4 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'5';document.getElementById('display').value=displaycontent; ">5 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'6';document.getElementById('display').value=displaycontent; ">6 </button>
+        <button class="button" id="edit"  onclick="displaycontent= displaycontent+'+';document.getElementById('display').value=displaycontent";>+ </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'1';document.getElementById('display').value=displaycontent; ">1 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'2';document.getElementById('display').value=displaycontent; ">2 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'3';document.getElementById('display').value=displaycontent; ">3 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'0';document.getElementById('display').value=displaycontent; ">0 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'00';document.getElementById('display').value=displaycontent; ">00 </button>
+        <button class="button"style="width: 40px; height: 40px;"onclick="displaycontent= displaycontent+'.';document.getElementById('display').value=displaycontent; ">. </button>
+        <button class="button" style="width: 40px; height: 40px; background-color: rgb(10, 145, 230); " 
+        onclick="let result = eval(displaycontent);
+                 displaycontent = result;
+                 document.getElementById('display').value = displaycontent;">=</button>
+       </div>
+    </div>
+    <script>
+            let displaycontent='';
+        document.getElementById('display').value=displaycontent;
+    </script>
+</body>
+</html>
